@@ -14,6 +14,7 @@
 		844DD43A1BB868D900229C91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844DD4391BB868D900229C91 /* Images.xcassets */; };
 		844DD43D1BB868D900229C91 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844DD43B1BB868D900229C91 /* LaunchScreen.xib */; };
 		844DD4491BB868DA00229C91 /* NSOperationSubclassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 844DD4481BB868DA00229C91 /* NSOperationSubclassTests.m */; };
+		844DD4541BB8696100229C91 /* SubclassNSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 844DD4531BB8696100229C91 /* SubclassNSOperation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		844DD4421BB868DA00229C91 /* NSOperationSubclassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSOperationSubclassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844DD4471BB868DA00229C91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		844DD4481BB868DA00229C91 /* NSOperationSubclassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationSubclassTests.m; sourceTree = "<group>"; };
+		844DD4521BB8696100229C91 /* SubclassNSOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubclassNSOperation.h; sourceTree = "<group>"; };
+		844DD4531BB8696100229C91 /* SubclassNSOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubclassNSOperation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		844DD42B1BB868D900229C91 /* NSOperationSubclass */ = {
 			isa = PBXGroup;
 			children = (
+				844DD4521BB8696100229C91 /* SubclassNSOperation.h */,
+				844DD4531BB8696100229C91 /* SubclassNSOperation.m */,
 				844DD4301BB868D900229C91 /* AppDelegate.h */,
 				844DD4311BB868D900229C91 /* AppDelegate.m */,
 				844DD4331BB868D900229C91 /* ViewController.h */,
@@ -163,6 +168,7 @@
 		844DD4211BB868D700229C91 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = OF;
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Olha Fizer";
 				TargetAttributes = {
@@ -221,6 +227,7 @@
 			files = (
 				844DD4351BB868D900229C91 /* ViewController.m in Sources */,
 				844DD4321BB868D900229C91 /* AppDelegate.m in Sources */,
+				844DD4541BB8696100229C91 /* SubclassNSOperation.m in Sources */,
 				844DD42F1BB868D900229C91 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
